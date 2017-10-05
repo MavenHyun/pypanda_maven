@@ -5,6 +5,6 @@ grn_data = "./trrust_rawdata_geneSymbol_duplicateEliminated.human.txt"
 ppi_data = "./ppi_biogrid.txt"
 output_file = './result_breast_rna.tsv'
 
-p = panda.Panda(expression_data, grn_data, ppi_data, remove_missing=True)
+p = panda.Panda(expression_data, grn_data, ppi_data, remove_missing=False)
 p.save_panda_results(file=output_file)
 
